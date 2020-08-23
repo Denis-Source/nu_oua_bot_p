@@ -150,3 +150,10 @@ to_for_student = Markup(
         "Студенту"
     ]
 ).markup
+
+
+class_search = Markup(
+    [
+        "Екскурсія університетом", "Студенту"
+    ]
+).markup

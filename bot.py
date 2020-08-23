@@ -1,7 +1,8 @@
 import telebot
 from data import data
 import config
-from misc import class_search, class_search_markup
+from misc import class_search
+import markups as m
 
 bot = telebot.TeleBot(config.TOKEN)
 
@@ -38,7 +39,7 @@ def main(message):
             bot.send_message(
                 message.chat.id,
                 string,
-                reply_markup=class_search_markup,
+                reply_markup=m.class_search,
                 parse_mode="HTML"
             )
 

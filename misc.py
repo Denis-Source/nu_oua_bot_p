@@ -1,6 +1,3 @@
-from markup_class import Markup
-
-
 def class_search(text):
     fontanska_23 = [
         "№102"
@@ -66,10 +63,3 @@ def class_search(text):
         to_send_string = f"Аудиторія <b>{text}</b> знаходиться за адресами:\n" \
                          f"{' та '.join(addres_to_reply)}."
     return to_send_string
-
-
-class_search_markup = Markup(
-    [
-        "Екскурсія університетом", "Студенту"
-    ]
-).markup
